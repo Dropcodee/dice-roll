@@ -21,7 +21,10 @@ module.exports = {
 
       black: '#000',
       white: '#fff',
-
+      dicePurple: {
+        100: '#232546',
+        200: '#303257'
+      },
       gray: {
         100: '#f7fafc',
         200: '#edf2f7',
