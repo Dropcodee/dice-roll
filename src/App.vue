@@ -4,8 +4,7 @@
       <navbar-component />
     </header>
     <main class="bg-root">
-      <div class="overlay"></div>
-      <router-view />
+      <div class="overlay"><router-view /></div>
     </main>
   </div>
 </template>
@@ -14,7 +13,6 @@ import NavbarComponent from '@/components/Layouts/NavbarComponent'
 export default {
   components: { NavbarComponent }
 }
-
 </script>
 <style lang="scss">
 .bg-root {
@@ -26,9 +24,8 @@ export default {
 
 .overlay {
   position: absolute;
-  background: rgba(25, 27, 54, .95);
+  background: rgba(25, 27, 54, 0.95);
   height: 100vh;
-  width: 100%
+  width: 100%;
 }
-
 </style>
