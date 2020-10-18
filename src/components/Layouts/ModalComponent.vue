@@ -5,24 +5,16 @@
       <div class="modal__backdrop" @click="closeModal()"/>
 
       <div class="modal__dialog">
-        <div class="modal__header">
+        <div class="modal__dialog__backdrop"></div>
+        <div class="flex justify-between p-2 z-20 bg-dicePurple-100 items-center">
           <slot name="header"/>
           <button type="button" class="modal__close" @click="closeModal()">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
-              <path
-                fill="currentColor"
-                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
-              ></path>
-            </svg>
+            <i class="fa fa-times text-gray-600 fill-current text-xl"></i>
           </button>
         </div>
 
         <div class="modal__body">
           <slot name="body"/>
-        </div>
-
-        <div class="modal__footer">
-          <slot name="footer"/>
         </div>
       </div>
     </div>
@@ -70,7 +62,7 @@ export default {
     z-index: 1;
   }
   &__dialog {
-    background-color: #ffffff;
+    background: url("https://images.hdqwalls.com/wallpapers/abstract-vector-design-a8.jpg");
     position: relative;
     width: 600px;
     margin: 50px auto;
@@ -78,6 +70,13 @@ export default {
     flex-direction: column;
     border-radius: 5px;
     z-index: 2;
+    &__backdrop {
+      position: absolute;
+      background: rgba(25, 27, 54, 0.9);
+      height: 100%;
+      width: 100%;
+      z-index: 0;
+    }
     @media screen and (max-width: 992px) {
       width: 90%;
     }
@@ -89,15 +88,16 @@ export default {
   &__header {
     padding: 20px 20px 10px;
     display: flex;
+    z-index: 20;
     align-items: flex-start;
     justify-content: space-between;
   }
   &__body {
-    padding: 10px 20px 10px;
     overflow: auto;
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    z-index: 20;
   }
   &__footer {
     padding: 10px 20px 20px;
