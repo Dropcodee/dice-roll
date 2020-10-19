@@ -1,9 +1,12 @@
 <template>
   <div class="home">
-    <div class="container mx-auto px-4">
-      <div class="flex my-4">
-        <div class="mr-3">
-          <a class="inline-block border border-dicePurple-800 rounded py-1 px-3 bg-dicePurple-800 text-white" href="#">Active Pill</a>
+    <div class="w-11/12 mx-auto px-4">
+      <div class="flex my-10">
+        <div class="w-1/2 rounded overflow-hidden shadow-lg ml-10">
+          <img class="absolute object-cover h-50 w-100 shadow-lg rounded-lg" src="/img/slots_background.webp" alt="Sunset in the mountains">
+        </div>
+        <div class="w-1/2 rounded overflow-hidden shadow-lg">
+          <img class="absolute object-cover h-50 w-100 shadow-lg rounded-lg" src="/img/crash_background.webp" alt="Sunset in the mountains">
         </div>
       </div>
     </div>
