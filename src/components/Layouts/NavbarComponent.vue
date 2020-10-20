@@ -16,13 +16,13 @@
           <div class="justify-between">
             <button
               class="px-3 py-2 mx-1 text-sm text-yellow-500 rounded border border-yellow-500 focus:outline-none hover:bg-opacity-25 hover:bg-gray-100 hover:border-yellow-400 ease-in-out duration-500 transition"
-              @click="$refs.auth.openModal()"
+              @click="openLogin"
             >
               Login
             </button>
             <button
               class="px-3 py-2 mx-2 text-sm text-dicePurple-200 rounded border bg-yellow-500 focus:outline-none hover:bg-yellow-400 border-transparent ease-in-out duration-500 transition"
-              @click="$refs.auth.openModal()"
+              @click="openRegister"
             >
               Register
             </button>
@@ -52,10 +52,20 @@
             </svg>
             <div class="absolute inset-0 mx-auto">
               <div class="pt-32 w-11/12 mx-4">
-              <p class="text-left mx-auto text-yellow-500 text-3xl  px-4">LOGO</p>
-              <p class="px-4 text-left break-words text-3xl text-gray-300 font-semibold">Fastest Growing Dice Game</p>
+                <p class="text-left mx-auto text-yellow-500 text-3xl px-4">
+                  LOGO
+                </p>
+                <p
+                  class="px-4 text-left break-words text-3xl text-gray-300 font-semibold"
+                >
+                  Fastest Growing Dice Game
+                </p>
               </div>
-              <p class="font-semibold text-gray-600 text-sm mx-6 w-11/12 inset-x-0 bottom-0 absolute pb-4">324,453,54 Bets Wagered</p>
+              <p
+                class="font-semibold text-gray-600 text-sm mx-6 w-11/12 inset-x-0 bottom-0 absolute pb-4"
+              >
+                324,453,54 Bets Wagered
+              </p>
             </div>
           </div>
           <div class="w-full md:w-1/2 p-4">
@@ -119,6 +129,16 @@ export default {
       } else {
         return 'RegisterForm'
       }
+    }
+  },
+  methods: {
+    openRegister () {
+      this.$refs.auth.openModal()
+      this.currentTab = 'RegisterForm'
+    },
+    openLogin () {
+      this.$refs.auth.openModal()
+      this.currentTab = 'LoginForm'
     }
   }
 }

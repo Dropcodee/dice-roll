@@ -5,7 +5,6 @@
       <div class="modal__backdrop" @click="closeModal()"/>
 
       <div class="modal__dialog">
-        <div class="modal__dialog__backdrop"></div>
         <div class="flex justify-between p-2 z-20 bg-dicePurple-100 items-center">
           <slot name="header"/>
           <button type="button" class="modal__close" @click="closeModal()">
@@ -62,7 +61,6 @@ export default {
     z-index: 1;
   }
   &__dialog {
-    background: url("https://images.hdqwalls.com/wallpapers/abstract-vector-design-a8.jpg");
     position: relative;
     width: 600px;
     margin: 50px auto;
