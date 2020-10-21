@@ -11,7 +11,7 @@
       <div class="w-full bg-dicePurple-200 shadow py-4 px-6">
         <div class="flex items-center container mx-auto justify-between">
           <div>
-            <p class="text-yellow-500 text-semibold">LOGO</p>
+            <router-link class="text-yellow-500 text-semibold" :to="{name: 'Home'}">LOGO</router-link>
           </div>
           <div class="justify-between">
             <button
@@ -36,7 +36,7 @@
         <h1 class="text-gray-300 font-semibold text-sm">Welcome</h1>
       </template>
       <template v-slot:body>
-        <div class="flex items-start h-full">
+        <div class="flex items-start h-full bg-hero-pattern">
           <div class="hidden md:block w-1/2 relative lg:h-full">
             <svg
               data-name="Layer 1"

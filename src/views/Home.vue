@@ -1,82 +1,88 @@
 <template>
   <div class="home">
     <section class="w-10/12 container mx-auto">
-      <div class="grid grid-cols-4 gap-4 mt-10 mx-auto w-full ">
-        <div class="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col items-center">
-          <div class="card">
-            <div class="card__image">
-              <img src="https://unsplash.it/400/608?image=123" alt="">
-              <div class="card__overlay card__overlay--indigo">
-                <div class="card__overlay-content">
-                  <ul class="card__meta">
-                    <li><a href="#0"><i class="fa fa-tag"></i> Html5/Css3</a></li>
-                    <li><a href="#0"><i class="fa fa-clock-o"></i> 2 min ago</a></li>
-                  </ul>
-                  <a href="#0" class="card__title">How to create a card based article with HTML5 &amp; CSS3</a>
-                  <ul class="card__meta card__meta--last">
-                    <li><a href="#0"><i class="fa fa-user"></i> Mithicher</a></li>
-                    <li><a href="#0"><i class="fa fa-facebook-square"></i> Share</a></li>
-                  </ul>
+      <div class="grid grid-cols-4 gap-4 mt-10 mx-auto w-full">
+        <router-link :to="{ name: 'Game', params: { name: 'card-game' } }">
+          <div
+            class="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col items-center"
+          >
+            <div class="card">
+              <div class="card__image">
+                <img src="https://unsplash.it/400/608?image=123" alt="" />
+                <div class="card__overlay card__overlay--indigo">
+                  <div class="card__overlay-content">
+                    <ul class="card__meta">
+                      <li>
+                        <a href="#0"><i class="fa fa-tag"></i>Casino</a>
+                      </li>
+                    </ul>
+                    <a href="#0" class="card__title">Dice Roll Game.</a>
+                    <ul class="card__meta card__meta--last"></ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col items-center">
-          <div class="card">
-            <div class="card__image">
-              <img src="https://unsplash.it/400/608?image=123" alt="">
-              <div class="card__overlay card__overlay--indigo">
-                <div class="card__overlay-content">
-                  <ul class="card__meta">
-                    <li><a href="#0"><i class="fa fa-tag"></i> Html5/Css3</a></li>
-                    <li><a href="#0"><i class="fa fa-clock-o"></i> 2 min ago</a></li>
-                  </ul>
-                  <a href="#0" class="card__title">How to create a card based article with HTML5 &amp; CSS3</a>
-                  <ul class="card__meta card__meta--last">
-                    <li><a href="#0"><i class="fa fa-user"></i> Mithicher</a></li>
-                    <li><a href="#0"><i class="fa fa-facebook-square"></i> Share</a></li>
-                  </ul>
+        </router-link>
+        <div
+          class="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col items-center"
+        >
+          <router-link :to="{ name: 'Game', params: { name: 'card-game' } }">
+            <div class="card">
+              <div class="card__image">
+                <img src="https://unsplash.it/400/608?image=123" alt="" />
+                <div class="card__overlay card__overlay--indigo">
+                  <div class="card__overlay-content">
+                    <ul class="card__meta">
+                      <li>
+                        <a href="#0"><i class="fa fa-tag"></i> Casino</a>
+                      </li>
+                    </ul>
+                    <a href="#0" class="card__title">Card Game</a>
+                    <ul class="card__meta card__meta--last"></ul>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </router-link>
         </div>
-        <div class="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col items-center">
-          <div class="card">
-            <div class="card__image">
-              <img src="https://unsplash.it/400/608?image=123" alt="">
-              <div class="card__overlay card__overlay--indigo">
-                <div class="card__overlay-content">
-                  <ul class="card__meta">
-                    <li><a href="#0"><i class="fa fa-tag"></i> Html5/Css3</a></li>
-                    <li><a href="#0"><i class="fa fa-clock-o"></i> 2 min ago</a></li>
-                  </ul>
-                  <a href="#0" class="card__title">How to create a card based article with HTML5 &amp; CSS3</a>
-                  <ul class="card__meta card__meta--last">
-                    <li><a href="#0"><i class="fa fa-user"></i> Mithicher</a></li>
-                    <li><a href="#0"><i class="fa fa-facebook-square"></i> Share</a></li>
-                  </ul>
+        <div
+          class="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col items-center"
+        >
+          <router-link :to="{ name: 'Game', params: { name: 'card-game' } }">
+            <div class="card">
+              <div class="card__image">
+                <img src="https://unsplash.it/400/608?image=123" alt="" />
+                <div class="card__overlay card__overlay--indigo">
+                  <div class="card__overlay-content">
+                    <ul class="card__meta">
+                      <li>
+                        <a href="#0"><i class="fa fa-tag"></i>Casino</a>
+                      </li>
+                    </ul>
+                    <a href="#0" class="card__title">Roulette</a>
+                    <ul class="card__meta card__meta--last"></ul>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </router-link>
         </div>
-        <div class="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col items-center">
+        <div
+          class="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col items-center"
+        >
           <div class="card">
             <div class="card__image">
-              <img src="https://unsplash.it/400/608?image=123" alt="">
+              <img src="https://unsplash.it/400/608?image=123" alt="" />
               <div class="card__overlay card__overlay--indigo">
                 <div class="card__overlay-content">
                   <ul class="card__meta">
-                    <li><a href="#0"><i class="fa fa-tag"></i> Html5/Css3</a></li>
-                    <li><a href="#0"><i class="fa fa-clock-o"></i> 2 min ago</a></li>
+                    <li>
+                      <a href="#0"><i class="fa fa-tag"></i>Casinos</a>
+                    </li>
                   </ul>
-                  <a href="#0" class="card__title">How to create a card based article with HTML5 &amp; CSS3</a>
-                  <ul class="card__meta card__meta--last">
-                    <li><a href="#0"><i class="fa fa-user"></i> Mithicher</a></li>
-                    <li><a href="#0"><i class="fa fa-facebook-square"></i> Share</a></li>
-                  </ul>
+                  <a href="#0" class="card__title">Mines</a>
+                  <ul class="card__meta card__meta--last"></ul>
                 </div>
               </div>
             </div>
@@ -97,23 +103,21 @@ export default {
   name: 'Home',
   components: { WagersTable }
 }
-
 </script>
 <style lang="scss" scoped>
-$indigo: #5C6BC0;
-$blue: #29B6F6;
+$indigo: #5c6bc0;
+$blue: #29b6f6;
 $black: #717171;
 $body-font-family: "Lato";
 $header-font-family: "Montserrat";
 // Card Article
 .card {
-
 }
 
 .card__image {
   -webkit-border-radius: 3px;
-     -moz-border-radius: 3px;
-      border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
   display: block;
   min-height: 240px;
   overflow: hidden;
@@ -123,19 +127,19 @@ $header-font-family: "Montserrat";
     display: block;
     margin-bottom: 0;
 
-    -webkit-transition: all .25s ease-in-out;
-       -moz-transition: all .25s ease-in-out;
-        -ms-transition: all .25s ease-in-out;
-         -o-transition: all .25s ease-in-out;
-            transition: all .25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
   }
 
   &:hover > img {
     -webkit-transform: scale(1.2);
-       -moz-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-         -o-transform: scale(1.2);
-            transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
 
@@ -150,8 +154,8 @@ $header-font-family: "Montserrat";
   text-decoration: none;
 
   -webkit-transition: all 0.3s ease-out;
-     -moz-transition: all 0.3s ease-out;
-      transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 
   &:hover {
     color: rgba(white, 0.7);
@@ -173,12 +177,20 @@ $header-font-family: "Montserrat";
 }
 
 .card__overlay--indigo {
-  background-image: linear-gradient(to bottom, rgba($indigo, 0.1), rgba($indigo, 0.8));
+  background-image: linear-gradient(
+    to bottom,
+    rgba($indigo, 0.1),
+    rgba($indigo, 0.8)
+  );
   z-index: 2;
 }
 
 .card__overlay--blue {
-  background-image: linear-gradient(to bottom, rgba($blue, 0.1), rgba($blue, 0.8));
+  background-image: linear-gradient(
+    to bottom,
+    rgba($blue, 0.1),
+    rgba($blue, 0.8)
+  );
   z-index: 2;
 }
 
