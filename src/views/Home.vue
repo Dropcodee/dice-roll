@@ -7,7 +7,7 @@
             class="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col items-center"
           >
             <div class="card">
-              <div class="card__image">
+              <div class="card__image h-12">
                 <img src="https://unsplash.it/400/608?image=123" alt="" />
                 <div class="card__overlay card__overlay--indigo">
                   <div class="card__overlay-content">
@@ -29,7 +29,7 @@
         >
           <router-link :to="{ name: 'Game', params: { name: 'card-game' } }">
             <div class="card">
-              <div class="card__image">
+              <div class="card__image h-12">
                 <img src="https://unsplash.it/400/608?image=123" alt="" />
                 <div class="card__overlay card__overlay--indigo">
                   <div class="card__overlay-content">
@@ -51,7 +51,7 @@
         >
           <router-link :to="{ name: 'Game', params: { name: 'card-game' } }">
             <div class="card">
-              <div class="card__image">
+              <div class="card__image h-12">
                 <img src="https://unsplash.it/400/608?image=123" alt="" />
                 <div class="card__overlay card__overlay--indigo">
                   <div class="card__overlay-content">
@@ -72,7 +72,7 @@
           class="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col items-center"
         >
           <div class="card">
-            <div class="card__image">
+            <div class="card__image h-12">
               <img src="https://unsplash.it/400/608?image=123" alt="" />
               <div class="card__overlay card__overlay--indigo">
                 <div class="card__overlay-content">
